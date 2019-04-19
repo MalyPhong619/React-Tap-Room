@@ -22,12 +22,6 @@ This application is a remake of an older Angular project. It will have a similar
 * To build and start the dev server
   * `$ npm run start`
 
-* To explicitly run ESLint
-  * `$ npm run lint`
-
-* To run the unit tests with Karma and Jasmine.
-  * `$ npm run test`
-
 
 ## Technologies Used
 
