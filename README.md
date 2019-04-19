@@ -1,40 +1,48 @@
-# _React Template_
-
-## _DO NOT TOUCH THE `Webpack-dev-server` dependency unless you know what your doing. If you update it there will be errors that break the application!_
-
-#### _This is a template using webpack for React, 04/15/19_
-
-#### By _**Ryan McLean**_
+# Taproom
 
 ## Description
 
-_This is a template that has been created for anyone to use. Clone it down and it will work. This template also includes scss styling_
-
-## Setup/Installation Requirements
-
-* _Run `git clone https://github.com/Lilkgb/react-template` in your terminal of choice_
-* _Navigate to where you put the folder inside your terminal and run `npm install`_
-* _After the install is complete you can run `npm run start` to see a live version of the website._
+This application is a remake of an older Angular project. It will have a similar data structure, functions and components. The major difference is how views will be styled and the structure of the project.
 
 
-## Known Bugs
+#### By Maly Phongsavanh, March 22 2019
 
-_If you run `npm run lint` on pc you will get `Expected linebreaks to be 'LF' but found 'CRLF'`. It doesn't break the code and will still run correctly when you run `npm run start`_
+## Setup on OSX
 
-## Support and contact details
+* Install Node.js
+* Install karma-cli globally:
+  * `$ npm install -g karma-cli`
 
-_Please contact Ryan McLean at rmcleandev@gmail.com_
+* Clone the repo
+  * https://github.com/MalyPhong619/taproom.git
+
+* Install Dependecies
+  * `$ npm install`
+
+* To build and start the dev server
+  * `$ npm run start`
+
+* To explicitly run ESLint
+  * `$ npm run lint`
+
+* To run the unit tests with Karma and Jasmine.
+  * `$ npm run test`
+
 
 ## Technologies Used
 
-_scss_
-_Webpack_
-_React_
-_eslint_
-_AOS_
+* JavaScript
+* Node.js
+* React
+* SCSS
+* CSS
 
-### License
+## Support and contact details
 
-*This Software is Licensed under the MIT License.*
+If there are any _questions_ or would like to contribute to the code, please feel free to email: _[Maly Phongsavanh](mailto:phongsavanh619@icloud.com)_
 
-Copyright (c) 2019 **_Ryan McLean_**
+## License
+
+This software is licensed under the MIT license.
+
+Copyright (c) 2019 **Maly Phongsavanh**
