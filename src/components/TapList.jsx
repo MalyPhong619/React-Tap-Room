@@ -149,6 +149,7 @@ function TapList() {
       <style jsx>{`
                 div {
                   width: 90%;
+                  margin: auto;
                   display: flex;
                   flex-flow: row wrap;
                   justify-content: space-between;

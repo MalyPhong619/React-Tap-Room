@@ -9,6 +9,8 @@ function Tap(props) {
                   width: 20vw;
                   height: 30vh;
                   border: 1px solid red;
+                  margin-bottom: 10px;
+                  padding: 5px;
                 }
               `}</style>
       <h1>{props.brand}</h1>
