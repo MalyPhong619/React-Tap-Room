@@ -1,9 +1,7 @@
 import React from 'react';
 
 function Taps() {
-  return(
-
-  );
+  return();
 }
 
 export default Taps;

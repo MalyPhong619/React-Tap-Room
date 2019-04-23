@@ -1,5 +1,5 @@
 import React from 'react';
-import Taps  from './Taps'
+import Taps  from './Taps';
 
 function TapList() {
   return (
@@ -7,7 +7,6 @@ function TapList() {
 
 
   );
-
 }
 
 export default TapList;
