@@ -44,7 +44,13 @@ var masterTapList = [
 function TapList() {
   return (
     <div>
-
+      {masterTapList.map((tap, index) =>
+      <Tap brand={tap.brand}
+      name={tap.name}
+      type={tap.type}
+      price={tap.price}
+      key={index}/>
+    )}
     </div>
   );
 }
