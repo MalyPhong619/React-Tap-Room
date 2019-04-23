@@ -1,9 +1,9 @@
 import React from 'react';
-import Taps  from './Taps';
+import Taps from './Taps';
 
 function TapList() {
   return (
-    <p>Hello</p>
+    <p>This is Tap List</p>
 
 
   );

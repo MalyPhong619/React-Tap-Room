@@ -1,10 +1,13 @@
 import React from 'react';
-// import TapList from './TapList';
+import TapList from './TapList';
 
 
 function App(){
   return (
+    <div>
     <p>Hello</p>
+    <TapList/>
+    </div>
   );
 }
 
