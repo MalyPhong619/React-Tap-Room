@@ -1,11 +1,13 @@
 import React from 'react';
 import TapList from './TapList';
-
+import { Switch, Route } from 'react-router-dom';
 
 function App(){
   return (
     <div>
-      <TapList/>
+      <Switch>
+        <Route exact path='/' component={TapList} />
+      </Switch>
     </div>
   );
 }
