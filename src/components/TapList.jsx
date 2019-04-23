@@ -4,8 +4,12 @@ import Tap from './Tap';
 function TapList() {
   return (
     <div>
-      <p>This is Tap List</p>
-      <Tap/>
+      <Tap
+        brand="Brand"
+        name="Cold Winter"
+        type="Porter"
+        price="9"
+      />
     </div>
   );
 }
