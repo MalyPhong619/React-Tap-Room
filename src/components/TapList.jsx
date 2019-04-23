@@ -146,13 +146,21 @@ function TapList() {
 
   return (
     <div>
+      <style jsx>{`
+                div {
+                  width: 90%;
+                  display: flex;
+                  flex-flow: row wrap;
+                  justify-content: space-between;
+                }
+              `}</style>
       {masterTapList.map((tap, index) =>
-      <Tap brand={tap.brand}
-      name={tap.name}
-      type={tap.type}
-      price={tap.price}
-      key={index}/>
-    )}
+        <Tap brand={tap.brand}
+          name={tap.name}
+          type={tap.type}
+          price={tap.price}
+          key={index}/>
+      )}
     </div>
   );
 }
