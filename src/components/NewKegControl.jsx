@@ -1,8 +1,6 @@
 import React from 'react';
 import NewKegTicket from './NewKegTicket';
 import EditKeg from './EditKeg';
-import TapList from './TapList';
-
 
 class NewKegControl extends React.Component {
   constructor(props) {
@@ -16,7 +14,7 @@ class NewKegControl extends React.Component {
   }
 
   addNewKeg(){
-    this.setState({newKegForm: true, editKef: false});
+    this.setState({newKegForm: true, editKeg: false});
   }
 
   editKegForm(){
@@ -30,7 +28,6 @@ class NewKegControl extends React.Component {
     } else if (this.state.editKeg === true) {
       visibleComponent = <EditKeg/>;
     }
-    console.log({TapList})
     return(
       <div>
         <style jsx>{`
@@ -47,7 +44,6 @@ class NewKegControl extends React.Component {
           {visibleComponent}
         </div>
         <div>
-          <TapList/>
         </div>
       </div>
     );
