@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 function Error404(props) {
-  console.log(props);
   return(
     <div>
       <div>
@@ -15,3 +14,7 @@ function Error404(props) {
 }
 
 export default Error404;
+
+Error404.propTypes = {
+  location: PropTypes.object
+};
