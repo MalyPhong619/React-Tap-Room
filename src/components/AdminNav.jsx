@@ -2,19 +2,29 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function AdminNav() {
-  const linkstyle = {
-    margin: '10px',
-    textDecoration: 'none',
-    color: 'black',
-    textTransform: 'uppercase',
-    borderRight: '1px dotted red',
-    paddingRight: '1vw',
+  const noUnderline = {
+    textDecoration: 'none'
   };
   return(
     <div>
-      <Link style={linkstyle} to='/'>Home</Link>
-      <Link style={linkstyle} to='/admin'>Add New Keg</Link>
-      <Link style={linkstyle} to='/'>Edit Existing Keg</Link>
+      <style jsx>{`
+        span {
+          margin: 10px;
+          padding-right: 1vw;
+          color: black;
+          text-transform: uppercase;
+          border-right: 1px dotted red;
+        }
+        span:hover {
+          color: red;
+          text-decoration: underline black;
+          letter-spacing: 1px;
+        }
+        `}
+      </style>
+      <Link style={noUnderline} to='/'><span>Home</span></Link>
+      <Link style={noUnderline} to='/admin'><span>Add New Keg</span></Link>
+      <Link style={noUnderline} to='/'><span>Edit Existing Keg</span></Link>
     </div>
   );
 }
