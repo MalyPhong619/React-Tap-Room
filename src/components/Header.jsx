@@ -1,4 +1,5 @@
 import React from 'react';
+import Nav from './Nav';
 
 function Header() {
   return(
@@ -21,6 +22,7 @@ function Header() {
           <h1>Tap The Keg</h1>
           <h2>Taproom</h2>
         </div>
+        <Nav/>
       </div>
     );
   }
