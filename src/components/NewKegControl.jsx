@@ -6,28 +6,28 @@ class NewKegControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formVisibleOnPage: false
+      newKegForm: false
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.addKeg = this.addKeg.bind(this)
   }
 
-  handleClick(){
-    this.setState({formVisibleOnPage: true})
-    console.log('Hey, you clicked me! I do not have code to change my state quite yet, but I will in a moment!');
+  addKeg(){
+    this.setState({newKegForm: true});
   }
 
   render() {
-    console.log(this.state)
+    let visibleComponent = null;
+    if (this.state.newKegForm === true) {
+      visibleComponent = <NewKegTicket/> ;
+    }
+
     return(
       <div>
-        <p>This is the keg control form</p>
-        <strong onClick={this.handleClick}>Click me to change my state!</strong>
-        <NewKegTicket/>
+        <button onClick={this.addKeg}>Add New Keg</button>
+        {visibleComponent}
       </div>
     );
   }
 }
-
-
 
 export default NewKegControl;
