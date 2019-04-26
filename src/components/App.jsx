@@ -17,6 +17,7 @@ function App(){
       <Header/>
       <Switch>
         <Route exact path='/' component={TapList} />
+        <Route exact path='/taplist' component={TapList} />
       </Switch>
     </div>
   );

@@ -21,7 +21,7 @@ function Nav() {
         </style>
         <nav>
           <a href='/'>Home</a>
-          <a href='/taplist'>Taps</a>
+          <a href='#/taplist'>Taps</a>
         </nav>
       </div>
     );
