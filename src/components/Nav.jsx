@@ -18,13 +18,13 @@ function Nav() {
             color: red;
           }
           `}
-        </style>
-        <nav>
-          <a href='/'>Home</a>
-          <a href='#/taplist'>Taps</a>
-        </nav>
-      </div>
-    );
-  }
+      </style>
+      <nav>
+        <a href='/'>Home</a>
+        <a href='#/taplist'>Taps</a>
+      </nav>
+    </div>
+  );
+}
 
-  export default Nav;
+export default Nav;

@@ -21,14 +21,14 @@ function Header() {
           }
 
           `}
-        </style>
-        <div>
-          <h1>Tap The Keg</h1>
-          <h2>Taproom</h2>
-        </div>
-        <Nav/>
+      </style>
+      <div>
+        <h1>Tap The Keg</h1>
+        <h2>Taproom</h2>
       </div>
-    );
-  }
+      <Nav/>
+    </div>
+  );
+}
 
-  export default Header;
+export default Header;

@@ -14,13 +14,13 @@ function App(){
           }
 
           `}</style>
-        <Header/>
-        <Switch>
-          <Route exact path='/' component={TapList} />
-          <Route exact path='/taplist' component={TapList} />
-        </Switch>
-      </div>
-    );
-  }
+      <Header/>
+      <Switch>
+        <Route exact path='/' component={TapList} />
+        <Route exact path='/taplist' component={TapList} />
+      </Switch>
+    </div>
+  );
+}
 
-  export default App;
+export default App;
