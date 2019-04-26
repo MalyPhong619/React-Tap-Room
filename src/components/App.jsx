@@ -7,6 +7,13 @@ import Header from './Header';
 function App(){
   return (
     <div>
+      <style jsx>{`
+          div {
+            margin: auto;
+            width: 90%;
+          }
+
+              `}</style>
       <Header/>
       <Switch>
         <Route exact path='/' component={TapList} />

@@ -4,11 +4,15 @@ function Nav() {
   return(
     <div>
       <style jsx>{`
+          div {
+            margin-bottom: 5%;
+          }
           a {
             margin: 10px;
             text-decoration: none;
             color: black;
             text-transform: uppercase;
+            border-right: 1px dotted red;
           }
           a:hover {
             color: red;
