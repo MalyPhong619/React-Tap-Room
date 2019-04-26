@@ -1,7 +1,6 @@
 import React from 'react';
 
-function EditKeg(props) {
-  console.log(props);
+function EditKeg() {
   return(
     <div>
       <p>This is to edit Keg</p>

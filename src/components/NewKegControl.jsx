@@ -1,6 +1,8 @@
 import React from 'react';
 import NewKegTicket from './NewKegTicket';
 import EditKeg from './EditKeg';
+import TapList from './TapList';
+
 
 class NewKegControl extends React.Component {
   constructor(props) {
@@ -18,7 +20,7 @@ class NewKegControl extends React.Component {
   }
 
   editKegForm(){
-    this.setState({newKegForm: false, editKeg: true});
+    this.setState({editKeg: true, newKegForm: false});
   }
 
   render() {
@@ -35,7 +37,7 @@ class NewKegControl extends React.Component {
               margin-top: 2vh;
             }
 
-            `}
+          `}
         </style>
         <button onClick={this.addNewKeg}>Add New Keg</button>
         <button onClick={this.editKegForm}>Edit Keg</button>
@@ -44,6 +46,7 @@ class NewKegControl extends React.Component {
           {visibleComponent}
         </div>
         <div>
+          <TapList/>
         </div>
       </div>
     );
