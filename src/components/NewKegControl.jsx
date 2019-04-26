@@ -34,10 +34,17 @@ class NewKegControl extends React.Component {
             div {
               margin-top: 2vh;
             }
-
+            button {
+              width: 80px;
+              height: 35px;
+              border: 1px solid black;
+              margin-top: 2vh;
+              margin-right: 1vw;
+              border-radius: 10px;
+            }
           `}
         </style>
-        <button onClick={this.addNewKeg}>Add New Keg</button>
+        <button onClick={this.addNewKeg}>Add Keg</button>
         <button onClick={this.editKegForm}>Edit Keg</button>
 
         <div>

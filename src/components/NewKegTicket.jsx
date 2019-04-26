@@ -9,16 +9,16 @@ function NewKegTicket() {
             flex-flow: column;
           }
           input {
-            width: 30%;
-            height: 2vh;
+            width: 250px;
+            height: 25px;
             margin-top: 1vh;
             border-radius: 5px;
             border: 1px solid black;
             padding-left: 10px;
           }
           button {
-            width: 8vw;
-            height: 3vh;
+            width: 80px;
+            height: 35px;
             border: 1px solid black;
             margin-top: 2vh;
             border-radius: 10px;
@@ -26,6 +26,7 @@ function NewKegTicket() {
 
           `}</style>
       <form>
+        <h1>Add New Keg</h1>
         <input
           type='text'
           id='brand'

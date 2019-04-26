@@ -23,7 +23,6 @@ function AdminNav() {
         `}
       </style>
       <Link style={noUnderline} to='/'><span>Home</span></Link>
-      <Link style={noUnderline} to='/admin'><span>Edit Kegs</span></Link>
     </div>
   );
 }
