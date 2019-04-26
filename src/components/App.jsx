@@ -5,7 +5,6 @@ import Admin from './Admin';
 import Header from './Header';
 import UserView from './UserView';
 import Error404 from './Error404';
-import NewKegControl from './NewKegControl';
 
 
 
