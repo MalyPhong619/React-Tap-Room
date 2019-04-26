@@ -1,6 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function NewKegTicket() {
+
+function NewKegTicket(props) {
+  console.log(props)
   return(
     <div>
       <style jsx>{`
@@ -52,5 +55,10 @@ function NewKegTicket() {
     </div>
   );
 }
+
+NewKegTicket.propTypes = {
+  onTroubleshootingConfirmation: PropTypes.func
+};
+
 
 export default NewKegTicket;
