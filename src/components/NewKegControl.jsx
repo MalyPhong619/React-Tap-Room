@@ -18,7 +18,7 @@ class NewKegControl extends React.Component {
   }
 
   editKegForm(){
-    this.setState({editKeg: true, newKegForm: false});
+    this.setState({newKegForm: false, editKeg: true});
   }
 
   render() {
@@ -35,7 +35,7 @@ class NewKegControl extends React.Component {
               margin-top: 2vh;
             }
 
-          `}
+            `}
         </style>
         <button onClick={this.addNewKeg}>Add New Keg</button>
         <button onClick={this.editKegForm}>Edit Keg</button>
