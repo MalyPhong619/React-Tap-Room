@@ -8,10 +8,10 @@ class NewKegControl extends React.Component {
     this.state = {
       newKegForm: false
     };
-    this.addKeg = this.addKeg.bind(this)
+    this.addNewKeg = this.addNewKeg.bind(this)
   }
 
-  addKeg(){
+  addNewKeg(){
     this.setState({newKegForm: true});
   }
 
@@ -23,7 +23,7 @@ class NewKegControl extends React.Component {
 
     return(
       <div>
-        <button onClick={this.addKeg}>Add New Keg</button>
+        <button onClick={this.addNewKeg}>Add New Keg</button>
         {visibleComponent}
       </div>
     );
