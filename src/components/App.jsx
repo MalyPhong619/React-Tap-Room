@@ -1,5 +1,6 @@
 import React from 'react';
 import TapList from './TapList';
+import Admin from './Admin';
 import { Switch, Route } from 'react-router-dom';
 import Header from './Header';
 
@@ -18,6 +19,7 @@ function App(){
       <Switch>
         <Route exact path='/' component={TapList} />
         <Route exact path='/taplist' component={TapList} />
+        <Route exact path='/admin' component={Admin} />
       </Switch>
     </div>
   );
