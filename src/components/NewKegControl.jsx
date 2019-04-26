@@ -1,5 +1,6 @@
 import React from 'react';
 import NewKegTicket from './NewKegTicket';
+import EditKeg from './EditKeg';
 
 
 class NewKegControl extends React.Component {
