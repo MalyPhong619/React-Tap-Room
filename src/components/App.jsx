@@ -13,14 +13,14 @@ function App(){
             width: 90%;
           }
 
-              `}</style>
-      <Header/>
-      <Switch>
-        <Route exact path='/' component={TapList} />
-        <Route exact path='/taplist' component={TapList} />
-      </Switch>
-    </div>
-  );
-}
+          `}</style>
+        <Header/>
+        <Switch>
+          <Route exact path='/' component={TapList} />
+          <Route exact path='/taplist' component={TapList} />
+        </Switch>
+      </div>
+    );
+  }
 
-export default App;
+  export default App;
