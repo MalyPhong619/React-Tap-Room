@@ -1,8 +1,6 @@
 import React from 'react';
 import NewKegTicket from './NewKegTicket';
 import EditKeg from './EditKeg';
-import TapList from './TapList';
-
 
 class NewKegControl extends React.Component {
   constructor(props) {
@@ -44,9 +42,6 @@ class NewKegControl extends React.Component {
 
         <div>
           {visibleComponent}
-        </div>
-        <div>
-          <TapList/>
         </div>
       </div>
     );
