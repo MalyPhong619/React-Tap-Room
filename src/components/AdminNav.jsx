@@ -7,12 +7,13 @@ function AdminNav() {
     textDecoration: 'none',
     color: 'black',
     textTransform: 'uppercase',
-    borderRight: '1px dotted red'
+    borderRight: '1px dotted red',
+    paddingRight: '1vw',
   };
   return(
     <div>
-      <Link style={linkstyle} to='/'>Home</Link> |
-      <Link style={linkstyle} to='/admin'>Add New Keg</Link> |
+      <Link style={linkstyle} to='/'>Home</Link>
+      <Link style={linkstyle} to='/admin'>Add New Keg</Link>
       <Link style={linkstyle} to='/'>Edit Existing Keg</Link>
     </div>
   );
