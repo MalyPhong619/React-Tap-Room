@@ -3,9 +3,26 @@ import React from 'react';
 function Header() {
   return(
     <div>
-      <p>Hello This is the Header</p>
-    </div>
-  );
-}
+      <style jsx>{`
+          div {
+            display: flex;
+            flex-flow: row nowrap;
+          }
+          h1 {
+            font-size: 4rem;
+          }
+          h2 {
+            align-self: flex-end;
+          }
 
-export default Header;
+          `}
+        </style>
+        <div>
+          <h1>Tap The Keg</h1>
+          <h2>Taproom</h2>
+        </div>
+      </div>
+    );
+  }
+
+  export default Header;
