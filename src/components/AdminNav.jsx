@@ -2,24 +2,18 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function AdminNav() {
+  const linkstyle = {
+    margin: '10px',
+    textDecoration: 'none',
+    color: 'black',
+    textTransform: 'uppercase',
+    borderRight: '1px dotted red'
+  };
   return(
     <div>
-      <style jsx>{`
-        .link {
-          margin: 10px;
-          text-decoration: none;
-          color: black;
-          text-transform: uppercase;
-          border-right: 1px dotted red;
-        }
-        .link:hover {
-          color: red;
-        }
-        `}
-      </style>
-      <Link className='link' to='/'>Home</Link> |
-      <Link className='link' to='/admin'>Add New Keg</Link> |
-      <Link className='link' to='/'>Edit Existing Keg</Link>
+      <Link style={linkstyle} to='/'>Home</Link> |
+      <Link style={linkstyle} to='/admin'>Add New Keg</Link> |
+      <Link style={linkstyle} to='/'>Edit Existing Keg</Link>
     </div>
   );
 }
