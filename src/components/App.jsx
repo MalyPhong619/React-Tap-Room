@@ -5,6 +5,7 @@ import Admin from './Admin';
 import Header from './Header';
 import UserView from './UserView';
 import Error404 from './Error404';
+import NewKegControl from './NewKegControl';
 
 
 
@@ -16,13 +17,12 @@ function App(){
             margin: auto;
             width: 90%;
           }
-
           `}</style>
       <Header/>
       <Switch>
         <Route exact path='/' component={UserView} />
         <Route exact path='/taplist' component={TapList} />
-        <Route exact path='/admin' component={Admin} />
+        <Route exact path='/admin' component={NewKegControl} />
         <Route component={Error404} />;
       </Switch>
     </div>

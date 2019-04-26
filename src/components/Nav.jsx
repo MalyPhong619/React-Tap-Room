@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function Nav() {
   const noUnderline = {
     textDecoration: 'none'
-  }
+  };
   return(
     <div>
       <style jsx>{`
