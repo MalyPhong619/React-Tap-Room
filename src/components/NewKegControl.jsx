@@ -1,4 +1,6 @@
 import React from 'react';
+import NewKegTicket from './NewKegTicket';
+
 
 class NewKegControl extends React.Component {
   constructor(props) {
@@ -12,6 +14,8 @@ class NewKegControl extends React.Component {
     return(
       <div>
         <p>This is the keg control form</p>
+        <strong onClick={this.handleCLick}>Click me to change my state!</strong>
+        <NewKegTicket/>
       </div>
     );
   }

@@ -22,7 +22,7 @@ function App(){
       <Switch>
         <Route exact path='/' component={UserView} />
         <Route exact path='/taplist' component={TapList} />
-        <Route exact path='/admin' component={NewKegControl} />
+        <Route exact path='/admin' component={Admin} />
         <Route component={Error404} />;
       </Switch>
     </div>
