@@ -26,7 +26,6 @@ function Header() {
         <h1>Tap The Keg</h1>
         <h2>Taproom</h2>
       </div>
-      <Nav/>
     </div>
   );
 }

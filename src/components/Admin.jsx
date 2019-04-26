@@ -4,7 +4,6 @@ import AdminNav from './AdminNav';
 function Admin() {
   return(
     <div>
-      <AdminNav/>
       <style jsx>{`
           form {
             display: flex;
@@ -27,6 +26,7 @@ function Admin() {
           }
 
           `}</style>
+        <AdminNav/>
       <form>
         <input
           type='text'

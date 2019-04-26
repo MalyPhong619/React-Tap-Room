@@ -1,10 +1,12 @@
 import React from 'react';
 import TapList from './TapList';
+import Nav from './Nav';
+import Header from './Header';
 
 function UserView() {
   return(
     <div>
-      <Header/>
+      <Nav/>
       <style jsx>{`
           div {
             margin: auto;

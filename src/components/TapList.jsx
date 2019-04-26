@@ -1,5 +1,6 @@
 import React from 'react';
 import Tap from './Tap';
+import Nav from './Nav';
 
 var masterTapList = [
   {
@@ -144,7 +145,10 @@ var masterTapList = [
 
 function TapList() {
 
+
   return (
+    <div>
+    <Nav/>
     <div>
       <style jsx>{`
                 div {
@@ -163,6 +167,7 @@ function TapList() {
           key={index}/>
       )}
     </div>
+  </div>
   );
 }
 
