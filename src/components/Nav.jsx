@@ -1,27 +1,33 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Nav() {
+  const noUnderline = {
+    textDecoration: 'none'
+  }
   return(
     <div>
       <style jsx>{`
           div {
             margin-bottom: 5%;
           }
-          a {
+          span {
             margin: 10px;
-            text-decoration: none;
+            padding-right: 1vw;
             color: black;
             text-transform: uppercase;
             border-right: 1px dotted red;
           }
-          a:hover {
+          span:hover {
             color: red;
+            text-decoration: underline black;
+            letter-spacing: 1px;
           }
           `}
       </style>
       <nav>
-        <a href='/'>Home</a>
-        <a href='#/taplist'>Taps</a>
+        <Link style={noUnderline} to='/'><span>Home</span></Link>
+        <Link style={noUnderline} to='/taplist'><span>Taps</span></Link>
       </nav>
     </div>
   );
