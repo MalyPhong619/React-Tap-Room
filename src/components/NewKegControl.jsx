@@ -23,6 +23,13 @@ class NewKegControl extends React.Component {
 
     return(
       <div>
+        <style jsx>{`
+            div {
+              margin-top: 2vh;
+            }
+
+          `}
+        </style>
         <button onClick={this.addNewKeg}>Add New Keg</button>
         {visibleComponent}
       </div>
