@@ -26,7 +26,7 @@ function Admin() {
           }
 
           `}</style>
-        <AdminNav/>
+      <AdminNav/>
       <form>
         <input
           type='text'

@@ -160,17 +160,17 @@ function TapList() {
             justify-content: space-between;
           }
           `}</style>
-    <Nav/>
-    <div>
-      {masterTapList.map((tap, index) =>
-        <Tap brand={tap.brand}
-          name={tap.name}
-          type={tap.type}
-          price={tap.price}
-          key={index}/>
-      )}
+      <Nav/>
+      <div>
+        {masterTapList.map((tap, index) =>
+          <Tap brand={tap.brand}
+            name={tap.name}
+            type={tap.type}
+            price={tap.price}
+            key={index}/>
+        )}
+      </div>
     </div>
-  </div>
   );
 }
 

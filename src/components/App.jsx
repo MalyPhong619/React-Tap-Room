@@ -17,7 +17,7 @@ function App(){
           }
 
           `}</style>
-        <Header/>
+      <Header/>
       <Switch>
         <Route exact path='/' component={UserView} />
         <Route exact path='/taplist' component={TapList} />
