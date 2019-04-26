@@ -6,11 +6,10 @@ import Header from './Header';
 function UserView() {
   return(
     <div>
-      <Nav/>
       <style jsx>{`
           div {
             margin: auto;
-            width: 90%;
+            width: 100%;
           }
 
           `}</style>

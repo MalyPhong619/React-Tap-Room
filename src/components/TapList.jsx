@@ -147,18 +147,21 @@ function TapList() {
 
 
   return (
-    <div>
+    <div className='tapListBody'>
+      <style jsx>{`
+          .tapListBody {
+            width: 90%;
+          }
+          div {
+            width: 100%;
+            margin: auto;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+          }
+          `}</style>
     <Nav/>
     <div>
-      <style jsx>{`
-                div {
-                  width: 90%;
-                  margin: auto;
-                  display: flex;
-                  flex-flow: row wrap;
-                  justify-content: space-between;
-                }
-              `}</style>
       {masterTapList.map((tap, index) =>
         <Tap brand={tap.brand}
           name={tap.name}
