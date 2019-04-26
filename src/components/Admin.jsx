@@ -1,8 +1,10 @@
 import React from 'react';
+import AdminNav from './AdminNav';
 
 function Admin() {
   return(
     <div>
+      <AdminNav/>
       <style jsx>{`
           form {
             display: flex;
