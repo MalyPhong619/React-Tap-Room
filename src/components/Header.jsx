@@ -3,8 +3,12 @@ import Nav from './Nav';
 
 function Header() {
   return(
-    <div>
+    <div className='headerDiv'>
       <style jsx>{`
+          .headerDiv {
+            display: flex;
+            flex-flow: column nowrap;
+          }
           div {
             display: flex;
             flex-flow: row nowrap;
