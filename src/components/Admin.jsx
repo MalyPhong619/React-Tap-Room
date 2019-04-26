@@ -3,6 +3,28 @@ import React from 'react';
 function Admin() {
   return(
     <div>
+      <style jsx>{`
+          form {
+            display: flex;
+            flex-flow: column;
+          }
+          input {
+            width: 30%;
+            height: 2vh;
+            margin-top: 1vh;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding-left: 10px;
+          }
+          button {
+            width: 8vw;
+            height: 3vh;
+            border: 1px solid black;
+            margin-top: 2vh;
+            border-radius: 10px;
+          }
+
+          `}</style>
       <form>
         <input
           type='text'
