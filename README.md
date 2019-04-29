@@ -22,6 +22,12 @@ This application is a remake of an older Angular project. It will have a similar
 * To build and start the dev server
   * `$ npm run start`
 
+* To run lint
+  * `$ npm run lint`
+
+* To correct syntax errors
+  * `$ npm run fix`
+
 ## Component Structure
 <img src="/rmimg/diagram.png" width="500px">
 
