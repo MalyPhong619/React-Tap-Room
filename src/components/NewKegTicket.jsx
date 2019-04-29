@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 
 function NewKegTicket(props) {
-  console.log(props.onTroubleshootingConfirmation)
   return(
     <div>
       <style jsx>{`
