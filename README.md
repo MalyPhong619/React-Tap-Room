@@ -26,6 +26,15 @@ This application is a remake of an older Angular project. It will have a similar
 <img src="/rmimg/diagram.png" width="500px">
 
 
+## Goals Reached
+
+- [x] Display All Taps
+- [x] Multiple paths
+- [ ] Add New Keg
+- [ ] Edit Existing Keg
+- [x] Organize Component Structure
+- [ ] Transfer 'state' between components
+- [x] Error route for nonexistent path
 
 ## Technologies Used
 
