@@ -1,7 +1,9 @@
 import React from 'react';
 import TapList from './TapList';
+import PropTypes from 'prop-types';
 
-function UserView() {
+function UserView(props) {
+  console.log(props.masterTapList)
   return(
     <div>
       <style jsx>{`
@@ -14,6 +16,10 @@ function UserView() {
       <TapList/>
     </div>
   );
+}
+
+UserView.propTypes = {
+  masterTapList: PropTypes.object
 }
 
 export default UserView;

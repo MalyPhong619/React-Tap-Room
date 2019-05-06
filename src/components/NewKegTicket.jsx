@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-function NewKegTicket(props) {
+function NewKegTicket() {
 
   let _brand = null;
   let _name = null;
@@ -10,12 +10,12 @@ function NewKegTicket(props) {
   let _price = null;
 
   function handleNewKegFormSubmission(event) {
-  event.preventDefault();
-  console.log(_brand.value);
-  console.log(_name.value);
-  console.log(_type.value);
-  console.log(_price.value);
-}
+    event.preventDefault();
+    console.log(_brand.value);
+    console.log(_name.value);
+    console.log(_type.value);
+    console.log(_price.value);
+  }
 
 
   return(

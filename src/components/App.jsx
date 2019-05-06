@@ -150,15 +150,15 @@ class App extends React.Component {
           price: 6
         }
       ]
-    }
+    };
   }
 
 
   render(){
-    console.log(this.state)
+    console.log(this.state);
     return (
       <div>
-      <style jsx>{`
+        <style jsx>{`
         div {
           margin: auto;
           width: 90%;
@@ -166,14 +166,14 @@ class App extends React.Component {
         `}</style>
         <Header/>
         <Switch>
-        <Route exact path='/' component={UserView} />
-        <Route exact path='/taplist' component={TapList} />
-        <Route exact path='/admin' component={Admin} />
-        <Route component={Error404} />;
+          <Route exact path='/' render={() =><UserView TapList={this.state.masterTapList} />} />
+          <Route exact path='/taplist' component={TapList} />
+          <Route exact path='/admin' component={Admin} />
+          <Route component={Error404} />;
         </Switch>
-        </div>
-      );
-    }
+      </div>
+    );
   }
+}
 
-  export default App;
+export default App;
