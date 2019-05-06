@@ -152,6 +152,13 @@ class App extends React.Component {
         }
       ]
     };
+    this.handleAddingNewTap = this.handleAddingNewTap.bind(this);
+  }
+
+  handleAddingNewTap(newKeg){
+    let newMasterTapList = this.state.masterTapList.slice();
+    newMasterTapList.push(newKeg);
+    this.setState({masterTapList: newMasterKegList});
   }
 
 
