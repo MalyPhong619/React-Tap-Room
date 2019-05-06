@@ -11,10 +11,10 @@ function UserView(props) {
     <style jsx>{`
       .userViewDiv {
         margin: auto;
-        width: 100%;
+        width: 80%;
         display: flex;
-        flex-flow: row nowrap;
-        border: 1px solid green;
+        flex-flow: row wrap;
+        justify-content: space-between;
       }
 
       `}</style>
