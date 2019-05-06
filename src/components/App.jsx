@@ -166,7 +166,7 @@ class App extends React.Component {
         `}</style>
         <Header/>
         <Switch>
-          <Route exact path='/' render={() =><UserView TapList={this.state.masterTapList} />} />
+          <Route exact path='/' render={() =><UserView masterTapList={this.state.masterTapList} />} />
           <Route exact path='/taplist' component={TapList} />
           <Route exact path='/admin' component={Admin} />
           <Route component={Error404} />;
