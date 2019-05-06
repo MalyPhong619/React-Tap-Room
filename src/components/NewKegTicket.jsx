@@ -3,6 +3,19 @@ import PropTypes from 'prop-types';
 
 
 function NewKegTicket(props) {
+
+  let _brand = null;
+  let _name = null;
+  let _type = null;
+
+  function handleNewKegFormSubmission(event) {
+  event.preventDefault();
+  console.log(_brand.value);
+  console.log(_name.value);
+  console.log(_type.value);
+}
+
+
   return(
     <div>
       <style jsx>{`
@@ -27,22 +40,25 @@ function NewKegTicket(props) {
           }
 
           `}</style>
-      <form>
+      <form onSubmit={handleNewKegFormSubmission}>
         <h1>Add New Keg</h1>
         <input
           type='text'
           id='brand'
-          placeholder='Company Name'>
+          placeholder='Company Name'
+          ref={(input) => {_brand = input;}}>
         </input>
         <input
           type='text'
           id='name'
-          placeholder='Keg Name'>
+          placeholder='Keg Name'
+          ref={(input) => {_name = input;}}>
         </input>
         <input
           type='text'
           id='type'
-          placeholder='Beer Type'>
+          placeholder='Beer Type'
+          ref={(input) => {_type = input;}}>
         </input>
         <input
           type='text'
