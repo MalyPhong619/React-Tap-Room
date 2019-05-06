@@ -20,7 +20,7 @@ function Tap(props) {
       <h1>{props.brand}</h1>
       <h3>{props.name}</h3>
       <h5><em>{props.type}</em></h5>
-      <p>$ {props.price}</p>
+      <p>{props.price}</p>
     </div>
   );
 }
