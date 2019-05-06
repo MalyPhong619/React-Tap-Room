@@ -7,7 +7,7 @@ function Tap(props) {
       <style jsx>{`
           div {
             width: 30%;
-            height: 300px;
+            height: 200px;
             border: 1px dotted black;
             margin-bottom: 10px;
             padding: 5px;
