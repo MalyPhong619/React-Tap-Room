@@ -18,7 +18,7 @@ function UserView(props) {
 }
 
 UserView.propTypes = {
-  masterTapList: PropTypes.object
+  masterTapList: PropTypes.array,
 };
 
 export default UserView;

@@ -6,7 +6,6 @@ import PropTypes from 'prop-types';
 
 
 function TapList(props) {
-console.log(props.masterTapList)
   return (
     <div className='tapListBody'>
       <style jsx>{`
@@ -36,7 +35,7 @@ console.log(props.masterTapList)
 }
 
 TapList.propTypes = {
-  masterTapList: PropTypes.object
+  masterTapList: PropTypes.array,
 }
 
 export default TapList;
