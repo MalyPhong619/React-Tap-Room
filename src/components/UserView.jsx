@@ -5,29 +5,24 @@ import Tap from './Tap';
 
 
 function UserView(props) {
-  const userViewDiv = {
-    display: 'flex',
-    justifyContent: 'space-between',
-    flexFlow: 'row nowrap'
-  }
+
   return(
-    <div style={userViewDiv}>
+    <div className='userViewDiv'>
     <style jsx>{`
-      div {
+      .userViewDiv {
         margin: auto;
         width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        border: 1px solid green;
       }
 
       `}</style>
-      <div>
       {props.masterTapList.map((tap, index) =>
         <Tap brand={tap.brand}
-          name={tap.name}
-          type={tap.type}
-          price={tap.price}
-          key={index}/>
+        name={tap.name}
+        key={index}/>
       )}
-      </div>
       </div>
     );
   }
