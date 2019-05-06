@@ -7,12 +7,14 @@ function NewKegTicket(props) {
   let _brand = null;
   let _name = null;
   let _type = null;
+  let _price = null;
 
   function handleNewKegFormSubmission(event) {
   event.preventDefault();
   console.log(_brand.value);
   console.log(_name.value);
   console.log(_type.value);
+  console.log(_price.value);
 }
 
 
@@ -63,7 +65,8 @@ function NewKegTicket(props) {
         <input
           type='text'
           id='cost'
-          placeholder='Cost per Pint'>
+          placeholder='Cost per Pint'
+          ref={(input) => {_price = input;}}>
         </input>
         <button type='submit'>Add Keg</button>
       </form>
