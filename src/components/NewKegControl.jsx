@@ -23,10 +23,9 @@ class NewKegControl extends React.Component {
   }
 
   render() {
-    console.log(this.props.onNewKegCreation);
     let visibleComponent = null;
     if (this.state.newKegForm === true) {
-      visibleComponent = <NewKegTicket onTroubleshootingConfirmation={this.addNewKeg} /> ;
+      visibleComponent = <NewKegTicket onTroubleshootingConfirmation={this.addNewKeg} onNewKegCreation={this.props.onNewKegCreation} /> ;
     } else if (this.state.editKeg === true) {
       visibleComponent = <EditKeg/>;
     }

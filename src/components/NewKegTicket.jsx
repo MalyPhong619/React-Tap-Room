@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 
-function NewKegTicket() {
+function NewKegTicket(props) {
 
   let _brand = null;
   let _name = null;
@@ -17,7 +17,7 @@ function NewKegTicket() {
     console.log(_price.value);
   }
 
-
+  console.log(props.onNewKegCreation)
   return(
     <div>
       <style jsx>{`
@@ -75,7 +75,8 @@ function NewKegTicket() {
 }
 
 NewKegTicket.propTypes = {
-  onTroubleshootingConfirmation: PropTypes.func
+  onTroubleshootingConfirmation: PropTypes.func,
+  onNewKegCreation: PropTypes.func
 };
 
 
