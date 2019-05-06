@@ -11,6 +11,7 @@ function Tap(props) {
             border: 1px dotted black;
             margin-bottom: 10px;
             padding: 5px;
+            text-align: center;
           }
           h1 {
             text-decoration: underline;
