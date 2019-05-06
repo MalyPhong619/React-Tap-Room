@@ -158,7 +158,7 @@ class App extends React.Component {
   handleAddingNewTap(newKeg){
     let newMasterTapList = this.state.masterTapList.slice();
     newMasterTapList.push(newKeg);
-    this.setState({masterTapList: newMasterKegList});
+    this.setState({masterTapList: newMasterTapList});
   }
 
 

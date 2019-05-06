@@ -9,7 +9,7 @@ function UserView(props) {
 
   return(
     <div className='userViewDiv'>
-    <style jsx>{`
+      <style jsx>{`
       .userViewDiv {
         display: grid;
         grid-gap: 10px;
@@ -30,19 +30,19 @@ function UserView(props) {
       <div className='tapList'>
         {props.masterTapList.map((tap, index) =>
           <Tap brand={tap.brand}
-          name={tap.name}
-          key={index}/>
+            name={tap.name}
+            key={index}/>
         )}
-        </div>
-        <div className='imageDiv'>
-        <img src={pouring} />
-        </div>
       </div>
-    );
-  }
+      <div className='imageDiv'>
+        <img src={pouring} />
+      </div>
+    </div>
+  );
+}
 
-  UserView.propTypes = {
-    masterTapList: PropTypes.array,
-  };
+UserView.propTypes = {
+  masterTapList: PropTypes.array,
+};
 
-  export default UserView;
+export default UserView;

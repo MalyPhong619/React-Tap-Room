@@ -12,6 +12,6 @@ function Admin(props) {
 
 Admin.propTypes = {
   onNewKegCreation: PropTypes.func
-}
+};
 
 export default Admin;

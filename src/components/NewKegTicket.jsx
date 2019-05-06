@@ -11,13 +11,14 @@ function NewKegTicket(props) {
 
   function handleNewKegFormSubmission(event) {
     event.preventDefault();
-    console.log(_brand.value);
-    console.log(_name.value);
-    console.log(_type.value);
-    console.log(_price.value);
+    props.onNewKegCreation({brand: _brand.value, name: _name.value, type: _type.value, price: _price.value});
+
+    _brand.value = '';
+    _name.value = '';
+    _type.value = '';
+    _price.value = '';
   }
 
-  console.log(props.onNewKegCreation)
   return(
     <div>
       <style jsx>{`
