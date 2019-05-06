@@ -5,6 +5,7 @@ import Admin from './Admin';
 import Header from './Header';
 import UserView from './UserView';
 import Error404 from './Error404';
+import Nav from './Nav';
 
 class App extends React.Component {
   constructor(props) {
@@ -155,7 +156,6 @@ class App extends React.Component {
 
 
   render(){
-    console.log(this.state);
     return (
       <div>
         <style jsx>{`
@@ -165,6 +165,7 @@ class App extends React.Component {
         }
         `}</style>
         <Header/>
+        <Nav/>
         <Switch>
           <Route exact path='/' render={() =><UserView masterTapList={this.state.masterTapList} />} />
           <Route exact path='/taplist' render={() =><TapList masterTapList={this.state.masterTapList} />} />

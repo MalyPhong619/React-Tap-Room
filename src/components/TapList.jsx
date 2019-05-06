@@ -1,6 +1,6 @@
 import React from 'react';
 import Tap from './Tap';
-import Nav from './Nav';
+
 import PropTypes from 'prop-types';
 
 
@@ -20,7 +20,7 @@ function TapList(props) {
             justify-content: space-between;
           }
           `}</style>
-      <Nav/>
+
       <div>
         {props.masterTapList.map((tap, index) =>
           <Tap brand={tap.brand}
