@@ -36,6 +36,6 @@ function TapList(props) {
 
 TapList.propTypes = {
   masterTapList: PropTypes.array,
-}
+};
 
 export default TapList;
