@@ -1,6 +1,7 @@
 import React from 'react';
 import NewKegTicket from './NewKegTicket';
 import EditKeg from './EditKeg';
+import PropTypes from 'prop-types';
 
 class NewKegControl extends React.Component {
   constructor(props) {
@@ -22,6 +23,7 @@ class NewKegControl extends React.Component {
   }
 
   render() {
+    console.log(this.props.onNewKegCreation);
     let visibleComponent = null;
     if (this.state.newKegForm === true) {
       visibleComponent = <NewKegTicket onTroubleshootingConfirmation={this.addNewKeg} /> ;
@@ -53,6 +55,10 @@ class NewKegControl extends React.Component {
       </div>
     );
   }
+}
+
+NewKegControl.propTypes = {
+  onNewKegCreation: PropTypes.func
 }
 
 export default NewKegControl;

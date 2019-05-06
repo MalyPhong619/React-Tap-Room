@@ -3,10 +3,9 @@ import NewKegControl from './NewKegControl';
 import PropTypes from 'prop-types';
 
 function Admin(props) {
-  console.log(props)
   return(
     <div>
-      <NewKegControl/>
+      <NewKegControl onNewKegCreation={props.onNewKegCreation}/>
     </div>
   );
 }
